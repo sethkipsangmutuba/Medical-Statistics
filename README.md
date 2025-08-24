@@ -174,8 +174,26 @@ Statistical methods are pervasive throughout medical literature. Surveys of lead
 Healthcare professionals do not need to perform complex calculations themselves, but they must understand when statistical methods are appropriate, how to interpret results, and how to apply findings responsibly to clinical decision-making.
 
 
+## 1.2 Why Use Statistics?
+
+Biological data are inherently variable, and this variability distinguishes medicine from the ‘hard’ sciences such as physics and chemistry. Unlike chemical reactions, which often yield consistent results under identical conditions, responses in humans are rarely uniform. For example, administering aspirin for headache relief does not guarantee that every individual will experience improvement. Exceptional cases, such as the dramatic effects of penicillin, are rare and not representative of typical medical outcomes. Absolute certainty in clinical practice is uncommon.
+
+Human measurements fluctuate naturally over time. Systolic blood pressure, for instance, varies considerably in healthy children, rising during the day and falling at night, demonstrating the dynamic nature of biological systems. Similarly, responses to environmental and lifestyle factors are variable: while cigarette smoking is a well-established cause of lung cancer and cardiovascular disease, some individuals exhibit little apparent harm despite long-term exposure.
+
+The identification of causal relationships in medicine often depends on careful statistical analysis. Historical examples include the work of Doll and Bradford Hill, whose rigorously designed case–control and cohort studies established the link between smoking and lung cancer—a connection previously obscured by confounding factors and observational inconsistencies. Ongoing debates, such as the effects of passive smoking, highlight the challenges of studying weaker associations.
+
+Statistics provides the framework for distinguishing **true effects** from **random variation**. When differences are observed in medical research, they may reflect real biological effects, chance, or a combination of both. The role of the medical statistician is to quantify this uncertainty, attribute variation appropriately, and determine whether observed effects can be reliably interpreted as meaningful. This judicious interpretation of variability is at the heart of medical statistics.
 
 
+## 1.3 Statistics is About Common Sense and Good Design
+
+A robust study design is the foundation of valid scientific inference. Even the most sophisticated statistical analysis cannot compensate for fundamental flaws in study design. While it is common for researchers to consult statisticians only after data collection, the true value of a medical statistician lies not in generating p-values, but in ensuring that the study produces results that are **reliable, comparable, and generalisable**.
+
+Consider the historical example of fluoridated water and cancer mortality. Burke and Yiamouyannis (1975) compared 10 fluoridated and 10 non-fluoridated towns in the United States and concluded that fluoridation caused a 20% increase in cancer mortality. Subsequent analysis by Oldham and Newell (1977), accounting for **age, gender, and ethnic composition**, revealed that the true difference was negligible—1% in fluoridated towns versus 4% in non-fluoridated towns—demonstrating the critical role of confounding variables. Notably, no formal statistical significance testing was required; careful design and interpretation sufficed.
+
+Confounding occurs when the observed effect of a variable is influenced by other factors correlated with both the exposure and the outcome. Observational studies, such as comparisons between smokers and non-smokers, are particularly vulnerable to this issue, as there are often **numerous unmeasured variables** that may explain the observed differences. While investigators can measure plausible confounders, critics can always hypothesize additional factors.  
+
+Randomised controlled trials (RCTs) mitigate this problem by assigning exposures or treatments **by chance**, ensuring that both measured and unmeasured confounding variables are balanced on average between groups. When randomisation is not feasible—as in studies of smoking and lung cancer—alternative interpretations remain possible, highlighting the need for careful study design and cautious interpretation. Observational studies and their challenges are discussed further in Chapter 12.
 
 
 
