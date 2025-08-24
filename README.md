@@ -312,7 +312,8 @@ Thus, **63 subjects per group** are sufficient to achieve 80% power.
 
 > Adequate sample size ensures that observed differences are not obscured by random variation, providing reliable and interpretable results.
 
-
+For a detailed **Python implementation with step-by-step calculations and visualizations**, see this notebook:  
+👉 [Sample Size and Power Considerations in Python](https://github.com/sethkipsangmutuba/Medical-Statistics/blob/main/a1.Sample_Size_and_Power_Considerations.ipynb)
 
 ### Questionnaire Design
 Questionnaires are widely used in medical research, particularly in cross-sectional surveys. Statisticians assist in designing questionnaires that are **easily codable** for computer analysis, and in piloting surveys to identify ambiguities or biases before full deployment. Guidance on questionnaire design and surveys is further discussed in Chapter 12.
