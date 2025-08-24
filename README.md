@@ -155,3 +155,27 @@ MedStat
 - [14.8 Points when reading the literature](#148-points-when-reading-the-literature)
 - [14.9 Technical details](#149-technical-details)
 - [14.10 Exercises](#1410-exercises)
+
+
+# Table of Contents
+
+- [1.1 Introduction](#11-introduction)
+
+---
+
+## 1.1 Introduction
+
+Medical statistics is an essential discipline for the practice of evidence-based healthcare. While most healthcare practitioners may not engage directly in research, they are frequent consumers of medical literature and must be able to critically appraise studies to inform patient care. 
+
+A fundamental goal of evidence-based medicine (EBM) is to systematically evaluate all available evidence regarding the efficacy and safety of treatments. This requires the ability to discern well-designed studies from flawed ones, assess the validity of their conclusions, and understand the limitations inherent in research.
+
+Statistical methods are pervasive throughout medical literature. Surveys of leading medical journals indicate that the majority of original research articles employ some form of statistical analysis. Therefore, a working knowledge of statistical principles is indispensable for interpreting research findings accurately.
+
+Healthcare professionals do not need to perform complex calculations themselves, but they must understand when statistical methods are appropriate, how to interpret results, and how to apply findings responsibly to clinical decision-making.
+
+
+
+
+
+
+
