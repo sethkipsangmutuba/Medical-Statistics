@@ -238,72 +238,80 @@ A common question for statisticians is: *“How large should my study be?”* Th
 
 Suppose we plan a survey comparing blood pressure between **100 diabetics** and **100 healthy controls**, with:
 
-- Expected mean difference: \( \Delta = 5 \, \text{mmHg} \)  
-- Standard deviation: \( \sigma = 10 \, \text{mmHg} \)  
-- Significance level: \( \alpha = 0.05 \) (two-sided)  
+- Expected mean difference: $\Delta = 5 \, \text{mmHg}$  
+- Standard deviation: $\sigma = 10 \, \text{mmHg}$  
+- Significance level: $\alpha = 0.05$ (two-sided)  
 
 We can calculate **power** and assess the adequacy of the sample size step by step.
 
 **Step 1: Standard error of the difference**
 
-\[
-SE = \sqrt{\frac{\sigma^2}{n_1} + \frac{\sigma^2}{n_2}} = \sqrt{\frac{10^2}{100} + \frac{10^2}{100}} = \sqrt{1 + 1} = \sqrt{2} \approx 1.414
-\]
+$$
+SE = \sqrt{\frac{\sigma^2}{n_1} + \frac{\sigma^2}{n_2}} 
+= \sqrt{\frac{10^2}{100} + \frac{10^2}{100}} 
+= \sqrt{1 + 1} 
+= \sqrt{2} \approx 1.414
+$$
 
 **Step 2: Z-score for the effect**
 
-\[
+$$
 Z = \frac{\Delta}{SE} = \frac{5}{1.414} \approx 3.536
-\]
+$$
 
-**Step 3: Critical Z-value for α = 0.05 (two-sided)**
+**Step 3: Critical Z-value for $\alpha = 0.05$ (two-sided)**
 
-\[
+$$
 Z_{\alpha/2} = 1.96
-\]
+$$
 
 **Step 4: Compute power**
 
-\[
+$$
 Z_\text{power} = Z - Z_{\alpha/2} = 3.536 - 1.96 \approx 1.576
-\]
+$$
 
 From standard normal tables:  
-\[
+
+$$
 P(Z > 1.576) \approx 0.057
-\]
+$$
 
 For a two-sided test, approximate **power**:  
-\[
-1 - \beta \approx 1 - 0.057 = 0.943 \, (\text{94.3%})
-\]
 
-> **Observation:** Although the example text mentions 20% probability, with 100 participants per group, the power is actually very high (~94%). A smaller sample or different assumptions could produce lower power.
+$$
+1 - \beta \approx 1 - 0.057 = 0.943 \, (\text{94.3\%})
+$$
+
+> **Observation:** Although the example text mentions 20% probability, with $n=100$ participants per group, the power is actually very high (~94%). A smaller sample or different assumptions could produce lower power.
 
 **Step 5: Sample size for 80% power**
 
-\[
+$$
 n = \frac{2 \sigma^2 (Z_{\alpha/2} + Z_\text{power})^2}{\Delta^2}
-\]
+$$
 
-For 80% power: \( Z_\text{power} = 0.84 \)  
+For 80% power: $Z_\text{power} = 0.84$  
 
-\[
-n = \frac{2 \times 10^2 \times (1.96 + 0.84)^2}{5^2} = \frac{200 \times 7.84}{25} \approx 62.7
-\]
+$$
+n = \frac{2 \times 10^2 \times (1.96 + 0.84)^2}{5^2} 
+= \frac{200 \times 7.84}{25} 
+\approx 62.7
+$$
 
 Thus, **63 subjects per group** are sufficient to achieve 80% power.
 
 ---
 
-### ✅ Summary
+### Summary
 
-- **SE** ≈ 1.414 mmHg  
-- **Z for effect** ≈ 3.536  
-- **Power** ≈ 94% (with n=100 per group)  
-- **Required n for 80% power** ≈ 63 per group  
+- $SE \approx 1.414 \, \text{mmHg}$  
+- $Z$ for effect $\approx 3.536$  
+- Power $\approx 94\%$ (with $n=100$ per group)  
+- Required $n$ for 80% power $\approx 63$ per group  
 
 > Adequate sample size ensures that observed differences are not obscured by random variation, providing reliable and interpretable results.
+
 
 
 ### Questionnaire Design
