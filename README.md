@@ -228,9 +228,83 @@ Continuous variables are sometimes **dichotomized** for simplicity, e.g., conver
 Statistical expertise is critical at all stages of medical research, from planning to interpretation. Engaging a statistician early in the study design can greatly enhance the reliability and validity of results. Key areas where a medical statistician contributes include:
 
 ### Sample Size and Power Considerations
-A common question for statisticians is: *“How large should my study be?”* The answer depends on anticipated outcomes, expected variability, and the available pool of participants. For binary outcomes (success/failure), the statistician calculates the likelihood of observing meaningful differences between groups. For quantitative outcomes, both the expected difference and the variability of measurements inform sample size decisions.  
 
-For example, in a survey comparing blood pressure between 100 diabetics and 100 healthy controls, with an expected difference of 5 mmHg and standard deviation of 10 mmHg, the probability of obtaining a statistically significant result at the 5% level may be only 20%. The investigator must then decide whether the study is feasible or whether increasing the sample size is warranted to improve the probability of success.
+A common question for statisticians is: *“How large should my study be?”* The answer depends on anticipated outcomes, expected variability, and the available pool of participants. 
+
+- For **binary outcomes** (success/failure), the statistician evaluates the probability of observing meaningful differences between groups.  
+- For **quantitative outcomes**, both the expected difference and the variability of measurements determine the required sample size to detect an effect reliably.  
+
+#### Example: Blood Pressure Study
+
+Suppose we plan a survey comparing blood pressure between **100 diabetics** and **100 healthy controls**, with:
+
+- Expected mean difference: \( \Delta = 5 \, \text{mmHg} \)  
+- Standard deviation: \( \sigma = 10 \, \text{mmHg} \)  
+- Significance level: \( \alpha = 0.05 \) (two-sided)  
+
+We can calculate **power** and assess the adequacy of the sample size step by step.
+
+**Step 1: Standard error of the difference**
+
+\[
+SE = \sqrt{\frac{\sigma^2}{n_1} + \frac{\sigma^2}{n_2}} = \sqrt{\frac{10^2}{100} + \frac{10^2}{100}} = \sqrt{1 + 1} = \sqrt{2} \approx 1.414
+\]
+
+**Step 2: Z-score for the effect**
+
+\[
+Z = \frac{\Delta}{SE} = \frac{5}{1.414} \approx 3.536
+\]
+
+**Step 3: Critical Z-value for α = 0.05 (two-sided)**
+
+\[
+Z_{\alpha/2} = 1.96
+\]
+
+**Step 4: Compute power**
+
+\[
+Z_\text{power} = Z - Z_{\alpha/2} = 3.536 - 1.96 \approx 1.576
+\]
+
+From standard normal tables:  
+\[
+P(Z > 1.576) \approx 0.057
+\]
+
+For a two-sided test, approximate **power**:  
+\[
+1 - \beta \approx 1 - 0.057 = 0.943 \, (\text{94.3%})
+\]
+
+> **Observation:** Although the example text mentions 20% probability, with 100 participants per group, the power is actually very high (~94%). A smaller sample or different assumptions could produce lower power.
+
+**Step 5: Sample size for 80% power**
+
+\[
+n = \frac{2 \sigma^2 (Z_{\alpha/2} + Z_\text{power})^2}{\Delta^2}
+\]
+
+For 80% power: \( Z_\text{power} = 0.84 \)  
+
+\[
+n = \frac{2 \times 10^2 \times (1.96 + 0.84)^2}{5^2} = \frac{200 \times 7.84}{25} \approx 62.7
+\]
+
+Thus, **63 subjects per group** are sufficient to achieve 80% power.
+
+---
+
+### ✅ Summary
+
+- **SE** ≈ 1.414 mmHg  
+- **Z for effect** ≈ 3.536  
+- **Power** ≈ 94% (with n=100 per group)  
+- **Required n for 80% power** ≈ 63 per group  
+
+> Adequate sample size ensures that observed differences are not obscured by random variation, providing reliable and interpretable results.
+
 
 ### Questionnaire Design
 Questionnaires are widely used in medical research, particularly in cross-sectional surveys. Statisticians assist in designing questionnaires that are **easily codable** for computer analysis, and in piloting surveys to identify ambiguities or biases before full deployment. Guidance on questionnaire design and surveys is further discussed in Chapter 12.
