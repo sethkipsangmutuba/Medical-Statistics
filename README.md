@@ -196,4 +196,104 @@ Confounding occurs when the observed effect of a variable is influenced by other
 Randomised controlled trials (RCTs) mitigate this problem by assigning exposures or treatments **by chance**, ensuring that both measured and unmeasured confounding variables are balanced on average between groups. When randomisation is not feasible—as in studies of smoking and lung cancer—alternative interpretations remain possible, highlighting the need for careful study design and cautious interpretation. Observational studies and their challenges are discussed further in Chapter 12.
 
 
+## 1.4 Types of Data
+
+Data are the raw material of statistics, just as crops are the raw material for a farmer, symbolized by the sheaf of wheat in the logo of the Royal Statistical Society. A statistician, like an experienced farmer, must be adept at identifying and handling different types of data. Understanding these distinctions is essential for correct analysis, interpretation, and presentation of results.  
+
+### Categorical (Qualitative) Data
+Categorical data consist of **named categories** rather than measured quantities. They are classified as:
+
+- **Nominal data**: Categories with no inherent order. Examples include gender, blood group, eye color, or marital status. Binary variables, such as “Dead or Alive” or “Regular exercise: Yes/No,” are a special case of nominal data.  
+- **Ordinal data**: Categories with a meaningful order but **without quantifiable intervals**. For instance, education levels (“Elementary, Middle, College”) or clinical outcomes (“Improved, Same, Worse”) are ordinal. The rank order conveys information, but the difference between ranks is not necessarily equal.  
+- **Ranks**: Sometimes numerical codes are assigned for preference or ranking, e.g., ranking four dressing aids from best to worst. These codes are **ordinal, not quantitative**, and cannot be treated as true numbers.  
+
+### Numerical (Quantitative) Data
+Numerical data involve **measurable quantities** and can be classified as:
+
+- **Count data**: Discrete numbers representing counts of events, such as the number of pregnancies, hospital admissions per year, or decayed teeth (DFM index).  
+- **Continuous data**: Measurements that, in principle, can take any value within a range. Examples include age, body mass index, or duration of menstruation. Continuous data often contain the most information and are the backbone of statistical analysis.  
+
+#### Transforming Continuous Data
+Continuous variables are sometimes **dichotomized** for simplicity, e.g., converting diastolic blood pressure into “Hypertensive” (>90 mmHg) and “Normotensive” (≤90 mmHg). While this facilitates interpretation or treatment decisions, it results in **loss of information**. Variables can also be divided into multiple groups, such as per capita income grouped into intervals, though the choice of cut-points should be justified to avoid bias.  
+
+### Interval vs Ratio Scales
+- **Interval scale**: Differences between values are meaningful, but ratios are not. Example: Celsius temperature or calendar dates. A temperature of 20°C is not “twice as hot” as 10°C.  
+- **Ratio scale**: Both differences and ratios are meaningful; zero has absolute significance. Example: body weight. A 10% increase has the same meaning regardless of units used (kg or lbs).  
+
+**Key principle:** Assigning numerical scores to ordinal categories implies **equal intervals**, which may not reflect reality. For instance, education coded as 1, 2, 3 does not imply that the risk difference between levels is equivalent. Correct understanding of data types is fundamental to valid statistical analysis.
+
+
+## 1.5 How a Statistician Can Help
+
+Statistical expertise is critical at all stages of medical research, from planning to interpretation. Engaging a statistician early in the study design can greatly enhance the reliability and validity of results. Key areas where a medical statistician contributes include:
+
+### Sample Size and Power Considerations
+A common question for statisticians is: *“How large should my study be?”* The answer depends on anticipated outcomes, expected variability, and the available pool of participants. For binary outcomes (success/failure), the statistician calculates the likelihood of observing meaningful differences between groups. For quantitative outcomes, both the expected difference and the variability of measurements inform sample size decisions.  
+
+For example, in a survey comparing blood pressure between 100 diabetics and 100 healthy controls, with an expected difference of 5 mmHg and standard deviation of 10 mmHg, the probability of obtaining a statistically significant result at the 5% level may be only 20%. The investigator must then decide whether the study is feasible or whether increasing the sample size is warranted to improve the probability of success.
+
+### Questionnaire Design
+Questionnaires are widely used in medical research, particularly in cross-sectional surveys. Statisticians assist in designing questionnaires that are **easily codable** for computer analysis, and in piloting surveys to identify ambiguities or biases before full deployment. Guidance on questionnaire design and surveys is further discussed in Chapter 12.
+
+### Selection of Sample and Control Subjects
+Representative sampling is crucial for valid inference. For instance, early studies suggested a link between migraine and intelligence, which later population studies disproved; the initial association was due to selection bias. Similarly, the choice of appropriate control groups is critical for accurate interpretation of results, especially in case-control or cohort studies (see Chapter 12).
+
+### Study Design
+Design considerations are as important as analysis. In clinical trials, double-blind randomised designs are generally preferable, though practical constraints may limit implementation. Statisticians advise on randomisation methods, blinding procedures, and other design features to minimise bias (see Chapter 13).
+
+### Laboratory Experiments
+Even in laboratory settings, biological variability must be accounted for. Statisticians help design experiments, assign treatments randomly, and implement quality control procedures, including measurement of within- and between-observer variation.
+
+### Displaying Data
+Effective graphical presentation summarises complex results clearly. Statisticians guide the choice of **charts, histograms, and intervals**, ensuring that important patterns are visible without distortion from random variation (see Chapters 2 and 3).
+
+### Choice of Summary Statistics and Analysis
+Summary statistics and analytic methods must align with the study design and data type. For instance, medians may be more appropriate than means in skewed distributions, and matched-pair differences must be analysed rather than raw measurements. Statisticians advise on the selection of appropriate summary statistics, analytic techniques, and presentation of results (see Chapter 8 for matched studies).
+
+**Key point:** The role of the statistician extends far beyond calculating p-values. By integrating principles of design, sampling, measurement, and analysis, statisticians ensure that study findings are interpretable, reproducible, and clinically meaningful.
+
+
+## 1.6 Further Reading
+
+For readers seeking additional depth in medical statistics, the following texts are recommended:
+
+- **Swinscow and Campbell (2002)** – An introductory text focused primarily on the **analysis of medical studies**, ideal for newcomers to the field.  
+- **Bland (2000) and Campbell (2006)** – Intermediate-level texts providing a broader perspective on statistical concepts and their application in healthcare research.  
+- **Altman (1991) and Armitage et al. (2002)** – Comprehensive references offering **detailed and extensive coverage** of statistical methodology.  
+- **Machin and Campbell (2005)** – Emphasises **study design** in medical research, complementing texts that focus on analysis.
+
+These resources provide a structured pathway for students and practitioners to deepen their understanding of both the **design and analysis** of medical research.
+
+## 1.7 Exercises
+
+### Exercise 1
+Consider a survey of nurses’ opinions regarding their working conditions. Classify the following variables by type:
+
+1. **Length of service** – Continuous quantitative (measured in years).  
+2. **Staff grade** – Ordinal categorical (ordered hierarchy of positions).  
+3. **Age** – Continuous quantitative (measured in years).  
+4. **Salary** – Continuous quantitative (monetary amount).  
+5. **Number of patients seen in a day** – Count data (discrete quantitative).  
+6. **Possession of a degree** – Nominal categorical (binary: Yes/No).
+
+---
+
+### Exercise 2
+Compare differences between discrete measurements such as shoe size and family size:
+
+- **Shoe size**: Discrete but represents an **interval scale** where differences are meaningful (difference between size 7 and 8 is equivalent to difference between 8 and 9).  
+- **Family size**: Discrete count data without uniform interval meaning; differences do not imply proportional change or interval equality.  
+
+---
+
+### Exercise 3
+Many continuous variables are dichotomised for simplicity, e.g., obesity (BMI >30 kg/m²) or anaemia (haemoglobin <10 g/dL).  
+
+**Considerations:**
+
+- **Information lost**: Dichotomisation removes granularity; for example, a patient with BMI 31 and another with BMI 45 are both classified as obese, ignoring the degree of severity. Similarly, anaemia severity is lost.  
+- **Additional information needed**: Severity of the condition, trends over time, underlying causes, and relevant clinical context.  
+- **Utility of labels**: Dichotomous labels provide a **practical clinical threshold** for treatment decisions, risk stratification, and communication, despite the loss of detailed information.
+
+**Key principle:** Dichotomisation simplifies decision-making but reduces statistical information and precision. Wherever possible, continuous data should be analysed in their original form, using thresholds only for clinical interpretation.
 
